@@ -485,7 +485,8 @@ mod tests {
         let nodes = parse_inline(text).expect("block should parse");
         assert_eq!(nodes.len(), 1);
         assert_eq!(nodes[0].tool, "bash");
-        let bad = "```edg\n[{\"label\":\"r\",\"tool\":\"bash\",\"args\":{\"command\":\"${cmd}\"}}]\n```";
+        let bad =
+            "```edg\n[{\"label\":\"r\",\"tool\":\"bash\",\"args\":{\"command\":\"${cmd}\"}}]\n```";
         assert!(parse_inline(bad).is_none());
         assert!(parse_inline("no block here").is_none());
     }

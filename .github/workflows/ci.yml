@@ -1,0 +1,30 @@
+name: CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  rust:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          components: rustfmt, clippy
+      - run: cargo fmt --all -- --check
+        working-directory: gdr-core
+      - run: cargo clippy --all-targets -- -D warnings
+        working-directory: gdr-core
+      - run: cargo test
+        working-directory: gdr-core
+
+  doc-links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: internal doc links exist
+        run: |
+          grep -rohE '\]\(([^)h][^)]*)\)' README.md docs/*.md | sed 's/^](//;s/)$//' | sort -u | while read -r f; do
+            [ -e "$f" ] || { echo "missing link target: $f"; exit 1; }
+          done
