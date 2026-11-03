@@ -1,0 +1,13 @@
+{"task": "fib", "edg": false, "returncode": 0, "steps": 5, "prompt_tokens": 6095, "completion_tokens": 292, "bypasses": 0, "success": true, "stderr_tail": ""}
+{"task": "rev", "edg": false, "returncode": 0, "steps": 4, "prompt_tokens": 6078, "completion_tokens": 635, "bypasses": 0, "success": true, "stderr_tail": ""}
+{"task": "prime", "edg": false, "returncode": 0, "steps": 5, "prompt_tokens": 6081, "completion_tokens": 49, "bypasses": 0, "success": true, "stderr_tail": ""}
+{"task": "stats", "edg": false, "returncode": 0, "steps": 5, "prompt_tokens": 6082, "completion_tokens": 194, "bypasses": 0, "success": true, "stderr_tail": ""}
+{"task": "fib", "edg": true, "returncode": 0, "steps": 5, "prompt_tokens": 6095, "completion_tokens": 921, "bypasses": 1, "success": true, "stderr_tail": ""}
+{"task": "rev", "edg": true, "returncode": 0, "steps": 3, "prompt_tokens": 6078, "completion_tokens": 1137, "bypasses": 2, "success": true, "stderr_tail": ""}
+{"task": "prime", "edg": true, "returncode": 0, "steps": 3, "prompt_tokens": 6081, "completion_tokens": 1536, "bypasses": 0, "success": true, "stderr_tail": ""}
+{"task": "stats", "edg": true, "returncode": 0, "steps": 4, "prompt_tokens": 6082, "completion_tokens": 141, "bypasses": 1, "success": true, "stderr_tail": ""}
+
+==== SUMMARY ====
+EDG OFF: tasks=4 success=4/4 steps=19 prompt_tokens=24336 completion_tokens=1170 total_tokens=25506 certified_bypasses=0
+EDG ON : tasks=4 success=4/4 steps=15 prompt_tokens=24336 completion_tokens=3735 total_tokens=28071 certified_bypasses=4
+E2E_EXIT=0

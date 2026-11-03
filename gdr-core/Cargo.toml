@@ -1,0 +1,14 @@
+[package]
+name = "gdr-core"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Guarded decision reuse: bank, observation-only guards, literal closure, substitution certificates"
+repository = "https://github.com/alitrack/gdr-protocol"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+[dev-dependencies]
+tokio = { version = "1", features = ["rt", "macros"] }

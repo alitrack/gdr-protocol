@@ -1,0 +1,13 @@
+/home/lhy/gdr-protocol/gdr-core/target/debug/deps/quote-90de4959ae89fb64.d: /home/lhy/.cargo/registry/src/rsproxy.cn-e3de039b2554c837/quote-1.0.47/src/lib.rs /home/lhy/.cargo/registry/src/rsproxy.cn-e3de039b2554c837/quote-1.0.47/src/ext.rs /home/lhy/.cargo/registry/src/rsproxy.cn-e3de039b2554c837/quote-1.0.47/src/format.rs /home/lhy/.cargo/registry/src/rsproxy.cn-e3de039b2554c837/quote-1.0.47/src/ident_fragment.rs /home/lhy/.cargo/registry/src/rsproxy.cn-e3de039b2554c837/quote-1.0.47/src/to_tokens.rs /home/lhy/.cargo/registry/src/rsproxy.cn-e3de039b2554c837/quote-1.0.47/src/runtime.rs /home/lhy/.cargo/registry/src/rsproxy.cn-e3de039b2554c837/quote-1.0.47/src/spanned.rs
+
+/home/lhy/gdr-protocol/gdr-core/target/debug/deps/libquote-90de4959ae89fb64.rlib: /home/lhy/.cargo/registry/src/rsproxy.cn-e3de039b2554c837/quote-1.0.47/src/lib.rs /home/lhy/.cargo/registry/src/rsproxy.cn-e3de039b2554c837/quote-1.0.47/src/ext.rs /home/lhy/.cargo/registry/src/rsproxy.cn-e3de039b2554c837/quote-1.0.47/src/format.rs /home/lhy/.cargo/registry/src/rsproxy.cn-e3de039b2554c837/quote-1.0.47/src/ident_fragment.rs /home/lhy/.cargo/registry/src/rsproxy.cn-e3de039b2554c837/quote-1.0.47/src/to_tokens.rs /home/lhy/.cargo/registry/src/rsproxy.cn-e3de039b2554c837/quote-1.0.47/src/runtime.rs /home/lhy/.cargo/registry/src/rsproxy.cn-e3de039b2554c837/quote-1.0.47/src/spanned.rs
+
+/home/lhy/gdr-protocol/gdr-core/target/debug/deps/libquote-90de4959ae89fb64.rmeta: /home/lhy/.cargo/registry/src/rsproxy.cn-e3de039b2554c837/quote-1.0.47/src/lib.rs /home/lhy/.cargo/registry/src/rsproxy.cn-e3de039b2554c837/quote-1.0.47/src/ext.rs /home/lhy/.cargo/registry/src/rsproxy.cn-e3de039b2554c837/quote-1.0.47/src/format.rs /home/lhy/.cargo/registry/src/rsproxy.cn-e3de039b2554c837/quote-1.0.47/src/ident_fragment.rs /home/lhy/.cargo/registry/src/rsproxy.cn-e3de039b2554c837/quote-1.0.47/src/to_tokens.rs /home/lhy/.cargo/registry/src/rsproxy.cn-e3de039b2554c837/quote-1.0.47/src/runtime.rs /home/lhy/.cargo/registry/src/rsproxy.cn-e3de039b2554c837/quote-1.0.47/src/spanned.rs
+
+/home/lhy/.cargo/registry/src/rsproxy.cn-e3de039b2554c837/quote-1.0.47/src/lib.rs:
+/home/lhy/.cargo/registry/src/rsproxy.cn-e3de039b2554c837/quote-1.0.47/src/ext.rs:
+/home/lhy/.cargo/registry/src/rsproxy.cn-e3de039b2554c837/quote-1.0.47/src/format.rs:
+/home/lhy/.cargo/registry/src/rsproxy.cn-e3de039b2554c837/quote-1.0.47/src/ident_fragment.rs:
+/home/lhy/.cargo/registry/src/rsproxy.cn-e3de039b2554c837/quote-1.0.47/src/to_tokens.rs:
+/home/lhy/.cargo/registry/src/rsproxy.cn-e3de039b2554c837/quote-1.0.47/src/runtime.rs:
+/home/lhy/.cargo/registry/src/rsproxy.cn-e3de039b2554c837/quote-1.0.47/src/spanned.rs:
