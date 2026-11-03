@@ -78,11 +78,45 @@ short tasks.
   controller hook point, transcript invariants).
 - `docs/EVAL.md` — full experiment methodology and raw data.
 
+## Quickstart
+
+No LLM needed — the demo models the loop with counters and asserts the
+audit math:
+
+```bash
+cargo run -p gdr-core --example quickstart
+# [edg] cert#1 label=run-tests tool=bash guard=last_ok args={"command":"python3 test_fib.py"}
+# ---
+# model calls:    1 (2 decisions, 1 substituted)
+# cert bypasses:  1
+# OK: one model call skipped, certificate minted, audit clean.
+```
+
+Or use the core directly:
+
+```rust
+use gdr_core::Bank;
+use serde_json::json;
+
+let bank = Bank::new_shared();
+let nodes = gdr_core::validate_nodes(&[json!({
+    "label": "run-tests", "tool": "bash",
+    "args": {"command": "python3 test_fib.py"},  // literal closure — no placeholders
+    "pred": "", "guard": "last_ok"
+})])?;
+bank.replace(nodes);
+bank.observe("bash", true, "file written");      // receipts are facts
+if let Some((node, cert)) = bank.next_eligible(None) {
+    // execute node via your normal tool path (same registry + approval gate)
+    println!("{cert}");                           // [edg] cert#1 label=run-tests ...
+}
+```
+
 ## Status
 
-Working reference implementation + measurements. Not a library you can pip
-install yet; the crate is extracted verbatim from the sigil harness and may
-still reference harness types. v0.2 will make it standalone.
+Working reference implementation + quickstart + measurements, CI-green
+(fmt + clippy -D warnings + tests). The core crate is standalone; the
+evaluations were run on the harness it was extracted from.
 
 ## License
 
